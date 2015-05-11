@@ -1,0 +1,55 @@
+".container": {
+	backgroundColor:"white"
+}
+
+'#index':{
+	title:L('actionMenu'),
+	exitOnClose: true
+}
+
+
+"ListItem": {
+	accessoryType: Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE
+}
+
+
+"#listNotes": {
+	backgroundColor: "white"
+}
+
+
+"#principal":{
+	top: 10, 
+	left: 30,
+	bottom: 0,
+	width:Titanium.UI.FILL,
+    layout: "vertical"
+},
+"#listLabel":{
+    left: 0, 
+    top: 4,
+    color: "black",
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: { 
+    	fontSize: 16 
+    }
+},
+"#dateView": {
+    left:0, 
+    layout: "horizontal"
+},
+".fLabel": {
+    color:"#999"
+},
+".row2": {
+    font: {
+    	 fontSize: 10 }
+},
+"#dateLabel": {
+    width: Titanium.UI.FILL,
+    color: 'red'
+}
+
+
+
+

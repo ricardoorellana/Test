@@ -1,0 +1,39 @@
+<Alloy>
+	<Window id="detailnote" layout="vertical">
+		
+		<ActionBar id="actionBarNote" onHomeIconItemSelected="goBack"/>
+		
+			<!--Alert before delete note -->
+					<OptionDialog id="dialog" title="Are you sure you want to delete this note?" cancel="1">
+					    <Options>
+					        <Option>Yes</Option>
+					        <Option>Cancel</Option>
+					    </Options>  
+					</OptionDialog> 
+		
+				<Menu id="superMenu">
+							<MenuItem id="editNote"
+					        onClick="editNote"
+					        title="Save"
+					        showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" 
+					        icon="/images/save.png"/>
+					        
+					        <MenuItem id="deleteNote"
+					        onClick="deleteNote"
+					        title="Delete"
+					        showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" 
+					        icon="/images/delete.png"/>
+					        
+					        <MenuItem id="deleteNote"
+					        onClick="goBack"
+					        title="Cancel"
+					        showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+				</Menu>
+				
+		<View class="container" layout="vertical">
+			
+		      <TextField id="noteTitle"/>
+		      <TextArea id="noteDescription" />
+		</View>
+	</Window>
+</Alloy>

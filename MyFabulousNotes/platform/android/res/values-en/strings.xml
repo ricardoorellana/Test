@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<resources>
+    <string name="lblUsuario">username</string>
+    <string name="lblPassword">password</string>
+    <string name="btnSignIn">Sign in</string>
+    
+    
+    <!-- ActionBars -->
+    <string name="actionMenu">My fabulous notes! </string>
+    
+    
+    <!--Menu -->
+    <string name="itemPet">Pet Profile</string>
+    <string name="itemNeedle">Needle</string>
+    <string name="itemHeight">Height Control</string>
+    
+</resources>

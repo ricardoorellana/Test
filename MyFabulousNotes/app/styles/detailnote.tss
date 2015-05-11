@@ -1,0 +1,58 @@
+
+".container" : {
+  backgroundColor:"white",
+  width:Titanium.UI.FILL,
+  height:Titanium.UI.FILL
+}
+
+"#detailnote":{
+	title:"My note"
+}
+
+"#noteTitle":{
+	top:"10dp",
+	left:10,
+	right:10,
+	color:"black",
+	width: Titanium.UI.FILL, 
+    height: 60,
+	bottom:"0dp",
+	font : {
+      fontSize : '16dp',
+      fontWeight: 'bold'
+    }
+}
+
+"#noteDescription":{
+	top:0,
+	left:10,
+	right:10,
+	color:"black",
+	width: Titanium.UI.FILLSIZE, 
+    height:Titanium.UI.FILL,
+    font : {
+      fontSize : '14dp',
+    }
+}
+
+//ActionBar
+
+"#editNote":{
+	width: "24dp", 
+    height: "24dp"
+}
+
+"#deleteNote":{
+	width: "24dp", 
+    height: "24dp"
+}
+
+"#actionBarNote":{
+	icon: '/actionicon.png',
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}
+
+
+
+

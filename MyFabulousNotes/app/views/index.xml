@@ -1,0 +1,50 @@
+<Alloy>
+	<Collection src="note" /> <!--Capture the collections I want to show -->
+	<Window id="index" class="container" layout="vertical">
+		
+		<ActionBar/> 
+		
+		<Menu id="menu">
+					<MenuItem id="menuItems"
+			        title="Add new note"
+			        onClick="addNote"
+			        showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+		</Menu>
+				
+	<ListView id="listNotes" defaultItemTemplate="notesListTemp" onItemclick="showNote"> 
+		
+		 <SearchBar barColor="#f6f7fa" hintText="Search a note by title" color="#468499" />
+		 
+		<Templates>
+		        <ItemTemplate name="notesListTemp">
+		          <View id="principal">
+			            <Label bindId="list" id="listLabel"/>
+			         	<!-- Show the date -->
+			         	<View id="dateView">
+			         		<Label class="row2 fLabel" text="Created: " />
+	                    	<Label class="row2" bindId="listDate" id="dateLabel" />
+	                	</View>
+		          </View>
+		         
+		        </ItemTemplate>
+	     </Templates>
+		   <ListSection dataCollection="note" dataTransform="dateFormat">
+		   	
+		   	  <ListItem 
+		        	list:text="{noteTitle}" 
+		        	listDate:text="{date}" 
+		        	idNote="{idNote}"
+		        	noteTitle="{noteTitle}" searchableText="{noteTitle}"
+		        	noteDescription="{noteDescription}" 
+		        	date="{date}"
+		      />	
+		   </ListSection>  
+		   
+		 
+
+    </ListView>
+		
+	
+		
+	</Window>
+</Alloy>

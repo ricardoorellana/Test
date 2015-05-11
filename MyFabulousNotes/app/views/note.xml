@@ -1,0 +1,15 @@
+<Alloy>
+	<Window layout="vertical">
+		<View class="container">
+			
+			<Label id="title">Note information:</Label>
+	 
+	 
+		      <Label id="noteTitle"></Label>
+		      <Label id="noteDescription"></Label> 
+		      <Label id="date"></Label> 
+			
+			
+		</View>
+	</Window>
+</Alloy>

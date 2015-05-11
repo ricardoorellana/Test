@@ -1,0 +1,28 @@
+<Alloy>
+	<Collection src="note" /> <!--Capture the collections I want to show -->
+	
+	<Window layout="vertical" title="Add new note">
+		
+		<ActionBar id="actionMenuAdd" onHomeIconItemSelected="goBack"/> 
+		
+		<Menu id="menu">
+					<MenuItem id="saveNote"
+			        title="Save note"
+			        onClick="saveNote"
+			        icon="/images/save.png"
+			        showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+			        
+			        <MenuItem id="goBack"
+			        title="Cancel"
+			        onClick="goBack"
+			        showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+		</Menu>
+		
+		<View class="container" layout="vertical">
+			<TextField id="noteTitle" hintText="New idea?"/>
+			<TextArea id="noteDescription" hintText="Write it here!"/>
+			
+		
+		</View>
+	</Window>
+</Alloy>
