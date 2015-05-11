@@ -1,2 +1,2 @@
 # Test
-I share my test with you guys, thank you.
+I share my fabulous notes app with you, thank you for the oportunity.
